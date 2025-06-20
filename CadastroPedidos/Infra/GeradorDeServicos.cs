@@ -1,6 +1,6 @@
 ﻿using Trabalho;
 
-namespace Template.Infra
+namespace Trabalho.Infra
 {
     public static class GeradorDeServicos
     {

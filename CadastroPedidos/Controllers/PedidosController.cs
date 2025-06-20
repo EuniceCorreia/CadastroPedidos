@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using MovimentoPedido;
+﻿using Microsoft.AspNetCore.Mvc;
+using Pedidos.DTO;
 using Services;
 
 namespace CatalogoProdutos.Controllers
@@ -16,8 +15,8 @@ namespace CatalogoProdutos.Controllers
             _pedidoDomain = new PedidoDomain();
         }
 
-        [HttpPost("CriarPedido")]
-        public IActionResult CriarPedido(InserirPedidoDTO dadosDoPedido)
+        [HttpPost("/CriarPedidos")]
+        public IActionResult CriarPedido(InserirPedidosDTO dadosDoPedido)
         {
             try
             {
@@ -31,8 +30,8 @@ namespace CatalogoProdutos.Controllers
             }
         }
 
-        [HttpPost("/ExcluirPedido")]
-        public IActionResult ExcluirPedido(ExcluirPedidoDTO dadosDoPedido)
+        [HttpPost("/ExcluirPedidos")]
+        public IActionResult ExcluirPedido(ExcluirPedidosDTO dadosDoPedido)
         {
             try
             {

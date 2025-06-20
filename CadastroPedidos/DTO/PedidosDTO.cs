@@ -1,9 +1,6 @@
-﻿using CatalogoProdutos;
-using CadastroUsuario;
-
-namespace MovimentoPedido
+﻿namespace Pedidos.DTO
 {
-    public class InserirPedidoDTO
+    public class InserirPedidosDTO
     {
         public int Id { get; set; }
         public int CodigoProduto { get; set; }
@@ -14,10 +11,10 @@ namespace MovimentoPedido
 
         public int Quantidade { get; set; }
     }
-    public class ExcluirPedidoDTO
+    public class ExcluirPedidosDTO
         {
-        internal object?[]? Id;
 
-        public int CodigoPedido { get; set; }
+        public int Id { get; set; }
+
         }
 }

@@ -1,10 +1,9 @@
-﻿using CadastroPedidos;
-using CadastroUsuario;
-using CatalogoProdutos;
-using MovimentoPedido;
-using MovimentoPedido.Services;
-using Template.Infra;
+﻿using PedidoCarrinho.Services;
+using Trabalho.Infra;
 using Trabalho;
+using CadastroPedidos;
+using PedidoCarrinho;
+using Pedidos.DTO;
 
 namespace Services
 {
@@ -24,7 +23,7 @@ namespace Services
 
         }
 
-        public void CriarPedido(InserirPedidoDTO dadosDoPedido)
+        public void CriarPedido(InserirPedidosDTO dadosDoPedido)
         {
             var produto = _produtosClient.BuscarProduto(dadosDoPedido.CodigoProduto);
             if (produto == null)
@@ -55,7 +54,7 @@ namespace Services
             _dataContext.SaveChanges();
         }
 
-        public void ExcluirPedido(ExcluirPedidoDTO dadosDoPedido)
+        public void ExcluirPedido(ExcluirPedidosDTO dadosDoPedido)
         {
             var pedido = _dataContext.Pedidos.Find(dadosDoPedido.Id);
             if (pedido == null)

@@ -1,7 +1,6 @@
-﻿using MovimentoPedido.DTO;
-using MovimentoProdutos.DTO;
+﻿using Produtos.DTO;
 
-namespace MovimentoPedido.Services
+namespace PedidoCarrinho.Services
 {
     public class ProdutosClient
     {
@@ -9,7 +8,7 @@ namespace MovimentoPedido.Services
         {
             var httpClient = new HttpClient();
 
-            var urlAplicacao = "http://localhost:7284/";
+            var urlAplicacao = "https://localhost:7284/";
 
             var metodo = "api/Produtos/";
 
