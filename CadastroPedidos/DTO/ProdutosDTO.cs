@@ -1,4 +1,4 @@
-﻿namespace MovimentoProdutos.DTO
+﻿namespace Produtos.DTO
 {
     public class ProdutosDTO
     {

@@ -1,4 +1,4 @@
-﻿namespace MovimentoPedido.DTO
+﻿namespace Usuarios.DTO
 {
     public class UsuariosDTO
     {

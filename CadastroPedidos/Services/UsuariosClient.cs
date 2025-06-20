@@ -1,6 +1,6 @@
-﻿using MovimentoPedido.DTO;
+﻿using Usuarios.DTO;
 
-namespace MovimentoPedido.Services
+namespace PedidoCarrinho.Services
 {
     public class UsuariosClient
     {
@@ -8,7 +8,7 @@ namespace MovimentoPedido.Services
         {
             var httpClient = new HttpClient();
 
-            var urlAplicacao = "http://localhost:7151/";
+            var urlAplicacao = "https://localhost:7151/";
 
             var metodo = "api/Usuarios/";
 

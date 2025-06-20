@@ -1,5 +1,5 @@
 ﻿using Trabalho;
-using Template.Infra;
+using Trabalho.Infra;
 
 namespace Trabalho
 {
@@ -21,7 +21,7 @@ namespace Trabalho
         {
             var trabalhoDto = new TrabalhoDTO()
             {
-                Texto = "Hello world!"
+                Texto = "TRABALHO ARQUITETURA - LOJA DE SAPATINHOS"
             };
 
             return trabalhoDto;

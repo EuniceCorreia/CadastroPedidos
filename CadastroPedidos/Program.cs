@@ -1,6 +1,6 @@
 using Trabalho;
 using Microsoft.EntityFrameworkCore;
-using Template.Infra;
+using Trabalho.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
 
